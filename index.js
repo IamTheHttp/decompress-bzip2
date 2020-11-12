@@ -19,7 +19,7 @@ module.exports = opts => input => {
 
 			resolve([{
 				data,
-				path: opts.path
+				...opts
 			}]);
 		} catch (err) {
 			reject(err);
